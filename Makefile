@@ -139,6 +139,21 @@ main.s:
 .PHONY : main.s
 
 # target to build an object file
+queue/queue.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/queue/queue.o
+.PHONY : queue/queue.o
+
+# target to preprocess a source file
+queue/queue.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/queue/queue.i
+.PHONY : queue/queue.i
+
+# target to generate assembly for a file
+queue/queue.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/queue/queue.s
+.PHONY : queue/queue.s
+
+# target to build an object file
 ring_buffer/ring_buffer.o:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ring_buffer/ring_buffer.o
 .PHONY : ring_buffer/ring_buffer.o
@@ -165,6 +180,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... queue/queue.o"
+	@echo "... queue/queue.i"
+	@echo "... queue/queue.s"
 	@echo "... ring_buffer/ring_buffer.o"
 	@echo "... ring_buffer/ring_buffer.i"
 	@echo "... ring_buffer/ring_buffer.s"
