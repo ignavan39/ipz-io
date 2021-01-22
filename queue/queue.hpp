@@ -2,19 +2,7 @@
 #define MYQUEUE_H
 #pragma once
 #include <iostream>
-
-template <typename T>
-class Node
-{
-public:
-    T data;
-    Node *next;
-    explicit Node(T d)
-    {
-        data = d;
-        next = nullptr;
-    }
-};
+#include "../shared/node.hpp"
 
 template <typename T>
 class Queue

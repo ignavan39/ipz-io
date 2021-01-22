@@ -7,3 +7,5 @@ CMakeCache.txt
 ./.vscode
 .idea
 .vscode
+build
+/build

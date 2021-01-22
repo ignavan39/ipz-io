@@ -168,6 +168,21 @@ ring_buffer/ring_buffer.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ring_buffer/ring_buffer.s
 .PHONY : ring_buffer/ring_buffer.s
 
+# target to build an object file
+stack/stack.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/stack/stack.o
+.PHONY : stack/stack.o
+
+# target to preprocess a source file
+stack/stack.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/stack/stack.i
+.PHONY : stack/stack.i
+
+# target to generate assembly for a file
+stack/stack.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/stack/stack.s
+.PHONY : stack/stack.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,6 +201,9 @@ help:
 	@echo "... ring_buffer/ring_buffer.o"
 	@echo "... ring_buffer/ring_buffer.i"
 	@echo "... ring_buffer/ring_buffer.s"
+	@echo "... stack/stack.o"
+	@echo "... stack/stack.i"
+	@echo "... stack/stack.s"
 .PHONY : help
 
 

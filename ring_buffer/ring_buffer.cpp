@@ -1,5 +1,5 @@
-#include "./ring_buffer.h"
-#include "./ring_buffer_exception.h"
+#include "./ring_buffer.hpp"
+#include "./ring_buffer_exception.hpp"
 
 template<typename T>
 RingBuffer<T>::RingBuffer(unsigned _size):array(new T[_size]), size(_size), startIdx(0), endIdx(0) {}

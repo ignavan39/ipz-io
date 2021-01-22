@@ -1,5 +1,5 @@
-#include "./queue.h"
-#include "./queue_exception.h"
+#include "./queue.hpp"
+#include "./queue_exception.hpp"
 
 template <typename T>
 bool Queue<T>::empty() const
